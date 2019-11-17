@@ -24,10 +24,80 @@
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="js/main.js"></script>-->
     </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
-</html>
+
+    <head>
+        <link rel="stylesheet" href="formulaire.css" />
+        <script type="text/javascript" src="formulaire.js"></script>
+
+        <h1>saisie d'une fiche personne</h1>
+        <title> FORMULAIRE</title>
+		
+     
+
+</head>
+
+          
+        
+		<body >
+		
+            <h2>FORMULAIRE DE SAISIE</h2>
+            <form >
+              <fieldset>
+                <legend> A propos de nous: </legend>
+                  <p>sexe : </p>
+                    <input type="radio" name="sexe" value="oui" id="oui"
+                    checked="checked" />
+                    <label for="M" class="inline">M</label>
+                    <input type="radio" name="sexe" value="f" id="f" />
+                    <label for="f" class="inline">F</label>
+                </fieldset>    
+            </form>
+
+            
+           
+                    <form  >
+                       
+                      <fieldset>
+                      <legend>Vos coordonnées :</legend>
+                           
+                  <div>      
+		                    <label for="nom">nom :</label>
+                        <input type="text" id= "nom" name  ="user_name" >
+                  </div>
+                          
+                    <div>
+                         <label for ="prenom">prenom :</label>
+                         <input type="text" id="prenom" name  ="user_name">
+                    </div>
+                    <div>
+                          <label for= "datedenaissance">datedenaissance :</label>
+                         <input type="date" id="datedenaissance" name ="user_birthday" placeholder="jj/mm/aaaa">
+                    </div>
+                      <div>
+
+                        <label for="adresse">adresse :</label>
+               
+                           <textarea  id="adresse" name ="user_address"></textarea>
+                       </div>
+
+                       <div>
+                       <label for="email"> email:</label>
+
+                          <input type="email" id="email"
+                                 pattern=".+@globex.com" size="30" required> 
+               
+                       </div>  
+                        <div>
+                          <input type ='submit'id= 'bouton_envoi' value ='VALIDER' onclick='validation()'/>
+                        </div>
+                           </fieldset>
+             
+
+                         </form> 
+         <div id="error"> </div> 
+         <div id="space"> </div>  
+        <div id="resultat"> </div> 
+      </body>           
+       </html>
+                    
+               
